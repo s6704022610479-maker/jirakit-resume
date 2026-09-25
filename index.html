@@ -6,16 +6,16 @@
   <title>Resume - Jirakit Kerdlarpphon</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-    body { background-color: #333; display: flex; justify-content: center; padding: 30px 10px; }
-    .resume-container { width: 880px; background: #ffffff; display: flex; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border-radius: 6px; overflow: hidden; }
+    body { background-color: #3b3b3b; display: flex; justify-content: center; padding: 25px 10px; }
+    .resume-container { width: 900px; background: #ffffff; display: flex; box-shadow: 0 10px 30px rgba(0,0,0,0.6); border-radius: 6px; overflow: hidden; }
     
     /* ฝั่งซ้าย (แถบสีเข้ม) */
-    .sidebar { width: 34%; background-color: #0b1528; color: #ffffff; padding: 35px 25px; text-align: center; }
-    .profile-img { width: 135px; height: 135px; border-radius: 50%; border: 3px solid #00d4ff; box-shadow: 0 0 15px rgba(0, 212, 255, 0.5); object-fit: cover; object-position: top; margin-bottom: 16px; background-color: #e2e8f0; }
+    .sidebar { width: 34%; background-color: #0b1528; color: #ffffff; padding: 35px 24px; text-align: center; }
+    .profile-img { width: 135px; height: 135px; border-radius: 50%; border: 3px solid #00d4ff; box-shadow: 0 0 15px rgba(0, 212, 255, 0.4); object-fit: cover; object-position: top; margin-bottom: 15px; background-color: #e2e8f0; }
     .name-title { font-size: 20px; font-weight: 800; letter-spacing: 1px; line-height: 1.25; margin-bottom: 6px; text-transform: uppercase; }
-    .sub-title { font-size: 12.5px; color: #38bdf8; margin-bottom: 25px; font-weight: 500; line-height: 1.4; }
+    .sub-title { font-size: 12.5px; color: #38bdf8; margin-bottom: 22px; font-weight: 500; line-height: 1.4; }
     
-    .side-section { text-align: left; margin-bottom: 22px; }
+    .side-section { text-align: left; margin-bottom: 20px; }
     .side-title { font-size: 12px; letter-spacing: 1.5px; border-bottom: 1px solid #1e293b; padding-bottom: 5px; margin-bottom: 10px; color: #94a3b8; font-weight: bold; text-transform: uppercase; }
     
     .contact-item { font-size: 11.5px; margin-bottom: 8px; word-break: break-all; color: #e2e8f0; display: flex; align-items: center; gap: 8px; }
@@ -30,8 +30,8 @@
 
     /* ฝั่งขวา (เนื้อหาหลัก) */
     .main-content { width: 66%; padding: 35px 35px; background: #ffffff; color: #333333; }
-    .main-section { margin-bottom: 24px; }
-    .section-heading { font-size: 14px; font-weight: 800; color: #0b1528; letter-spacing: 1px; border-bottom: 2px solid #cbd5e1; padding-bottom: 5px; margin-bottom: 12px; text-transform: uppercase; }
+    .main-section { margin-bottom: 22px; }
+    .section-heading { font-size: 14px; font-weight: 800; color: #0b1528; letter-spacing: 1px; border-bottom: 2px solid #cbd5e1; padding-bottom: 5px; margin-bottom: 10px; text-transform: uppercase; }
     .summary-text { font-size: 12.5px; color: #475569; line-height: 1.6; text-align: justify; }
     
     .edu-title { font-size: 13.5px; font-weight: bold; color: #0f172a; }
@@ -87,22 +87,24 @@
           <span class="badge">Discrete Math</span>
         </div>
 
-        <div class="skill-cat">Tools & Technologies</div>
+        <div class="skill-cat">Tools & Networking</div>
         <div class="badge-group">
           <span class="badge">Git / GitHub</span>
           <span class="badge">VS Code</span>
-          <span class="badge">Outlook (IMAP)</span>
+          <span class="badge">Outlook (IMAP/POP3)</span>
+          <span class="badge">TCP/IP & DNS</span>
         </div>
 
         <div class="skill-cat">Soft Skills</div>
         <div class="badge-group">
           <span class="badge">Analytical Thinking</span>
           <span class="badge">Problem Solving</span>
-          <span class="badge">Teamwork</span>
+          <span class="badge">Team Collaboration</span>
+          <span class="badge">Time Management</span>
         </div>
       </div>
 
-      <div class="side-section">
+      <div class="side-section" style="margin-bottom: 0;">
         <div class="side-title">LANGUAGES</div>
         <div class="lang-item"><span>Thai</span> <span class="lang-level">Native</span></div>
         <div class="lang-item"><span>English</span> <span class="lang-level">Intermediate</span></div>
@@ -127,9 +129,11 @@
           <div class="course-item">Data Communication (DN 2026)</div>
           <div class="course-item">Discrete Mathematics</div>
           <div class="course-item">Data Structures & Algorithms</div>
-          <div class="course-item">Database Systems</div>
+          <div class="course-item">Database Systems (SQL)</div>
           <div class="course-item">Numerical Analysis</div>
           <div class="course-item">Probability & Statistics</div>
+          <div class="course-item">Object-Oriented Programming</div>
+          <div class="course-item">Linear Algebra</div>
         </div>
       </div>
       
@@ -160,14 +164,23 @@
 
         <div class="project-card">
           <div class="project-header">
-            <span class="project-title">Statistical Data Analysis & Programming</span>
+            <span class="project-title">Statistical Data Analysis & Mathematical Modeling</span>
             <span class="project-tag">Python • R • SQL</span>
           </div>
           <ul class="project-list">
-            <li>Applied mathematical modeling and statistical methods to analyze datasets and visualize trends.</li>
+            <li>Applied mathematical modeling and statistical methods to analyze datasets and visualize key trends.</li>
             <li>Developed structured algorithms and database queries to process and manage academic data efficiently.</li>
           </ul>
         </div>
+      </div>
+
+      <div class="main-section" style="margin-bottom: 0;">
+        <div class="section-heading">TECHNICAL COMPETENCIES & ACTIVITIES</div>
+        <ul class="project-list">
+          <li><strong>Network & Protocol Configuration:</strong> Hands-on experience with DNS management, HTTP/HTTPS web hosting, and email transfer protocols (SMTP, IMAP, POP3).</li>
+          <li><strong>Software Development:</strong> Proficient in writing clean, maintainable code in Python, C++, and web technologies with version control via Git.</li>
+          <li><strong>Academic Engagement:</strong> Active participant in Faculty of Applied Science workshops and collaborative computer science projects at KMUTNB.</li>
+        </ul>
       </div>
     </div>
   </div>
