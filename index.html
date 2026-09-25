@@ -2,28 +2,122 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume - Jirakit Kerdlarpphon</title>
   <style>
-    body { font-family: Arial, sans-serif; background-color: #f4f6f9; margin: 0; padding: 20px; }
-    .container { max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    h1 { color: #003366; margin-bottom: 5px; }
-    h3 { color: #555; margin-top: 0; }
-    hr { border: 0; height: 1px; background: #ddd; margin: 20px 0; }
-    .section-title { color: #003366; border-bottom: 2px solid #003366; padding-bottom: 5px; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background-color: #555; display: flex; justify-content: center; padding: 30px 10px; }
+    .resume-container { width: 850px; background: #ffffff; display: flex; box-shadow: 0 0 20px rgba(0,0,0,0.5); border-radius: 4px; overflow: hidden; }
+    
+    /* ฝั่งซ้าย (แถบสีเข้ม) */
+    .sidebar { width: 35%; background-color: #0f1c3f; color: #ffffff; padding: 40px 25px; text-align: center; }
+    .profile-img { width: 140px; height: 140px; border-radius: 50%; border: 4px solid #00b4d8; object-fit: cover; object-position: top; margin-bottom: 20px; background-color: #e2e8f0; }
+    .name-title { font-size: 20px; font-weight: bold; letter-spacing: 1px; line-height: 1.3; margin-bottom: 8px; text-transform: uppercase; }
+    .sub-title { font-size: 13px; color: #90e0ef; margin-bottom: 30px; font-weight: 500; }
+    
+    .side-section { text-align: left; margin-bottom: 25px; }
+    .side-title { font-size: 14px; letter-spacing: 1.5px; border-bottom: 1px solid #1e3a8a; padding-bottom: 5px; margin-bottom: 12px; color: #caf0f8; font-weight: bold; }
+    .contact-item { font-size: 12px; margin-bottom: 10px; word-break: break-all; color: #e0e1dd; line-height: 1.4; }
+    .contact-item span { display: block; font-weight: bold; color: #90e0ef; }
+    
+    .badge-group { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+    .badge { background: #1e293b; border: 1px solid #3b82f6; font-size: 11px; padding: 4px 8px; border-radius: 4px; color: #e2e8f0; }
+    
+    /* ฝั่งขวา (เนื้อหาหลัก) */
+    .main-content { width: 65%; padding: 40px 35px; background: #ffffff; color: #333333; }
+    .main-section { margin-bottom: 28px; }
+    .section-heading { font-size: 15px; font-weight: bold; color: #0f1c3f; letter-spacing: 1px; border-bottom: 2px solid #0f1c3f; padding-bottom: 5px; margin-bottom: 12px; text-transform: uppercase; }
+    .summary-text { font-size: 13px; color: #555555; line-height: 1.6; text-align: justify; }
+    
+    .edu-title { font-size: 14px; font-weight: bold; color: #000; }
+    .edu-degree { font-size: 13px; color: #0077b6; font-weight: bold; margin-bottom: 6px; }
+    .edu-details { font-size: 12px; color: #666; line-height: 1.5; }
+    
+    .project-card { margin-bottom: 15px; }
+    .project-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+    .project-title { font-size: 13px; font-weight: bold; color: #111; }
+    .project-tag { font-size: 10px; background: #e0f2fe; color: #0369a1; padding: 2px 6px; border-radius: 4px; font-weight: 600; }
+    .project-desc { font-size: 12px; color: #555; line-height: 1.5; padding-left: 12px; position: relative; }
+    .project-desc::before { content: "›"; position: absolute; left: 0; color: #0077b6; font-weight: bold; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>จิรกิตติ์ เกิดลาภผล (Jirakit Kerdlarpphon)</h1>
-    <h3>นักศึกษาสาขาวิชาคณิตศาสตร์เชิงวิทยาการคอมพิวเตอร์ | มจพ.</h3>
-    <p><strong>Email:</strong> s6704022610479@email.kmutnb.ac.th | <strong>Tel:</strong> 095-912-9787</p>
-    <hr>
-    <h2 class="section-title">EDUCATION</h2>
-    <p><strong>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (KMUTNB)</strong><br>
-    คณะวิทยาศาสตร์ประยุกต์ สาขาวิชาคณิตศาสตร์เชิงวิทยาการคอมพิวเตอร์ (MC)</p>
-    <h2 class="section-title">PROJECTS / SKILLS</h2>
-    <p>• วิชา Data Communication and Networking (DN 2026)<br>
-    • Web Hosting & Domain Name Configuration (GitHub Pages)</p>
+
+  <div class="resume-container">
+    <!-- ฝั่งซ้าย -->
+    <div class="sidebar">
+      <img src="FnqJVjpMC32tz_O_kat7gQ__-_1_.png" alt="Jirakit Kerdlarpphon" class="profile-img">
+      <div class="name-title">JIRAKIT<br>KERDLARPPHON</div>
+      <div class="sub-title">Mathematics with Computer Science<br>Student (MC)</div>
+      
+      <div class="side-section">
+        <div class="side-title">CONTACT</div>
+        <div class="contact-item"><span>Email:</span> s6704022610479@email.kmutnb.ac.th</div>
+        <div class="contact-item"><span>Tel:</span> 095-912-9787</div>
+        <div class="contact-item"><span>Location:</span> KMUTNB, Thailand</div>
+        <div class="contact-item"><span>GitHub:</span> s6704022610479-maker.github.io</div>
+      </div>
+      
+      <div class="side-section">
+        <div class="side-title">SKILLS</div>
+        <div style="font-size: 12px; font-weight: bold; color: #90e0ef; margin-top: 5px;">Programming</div>
+        <div class="badge-group">
+          <span class="badge">HTML/CSS</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">Python</span>
+          <span class="badge">C++</span>
+          <span class="badge">SQL</span>
+        </div>
+        <div style="font-size: 12px; font-weight: bold; color: #90e0ef; margin-top: 10px;">Mathematics</div>
+        <div class="badge-group">
+          <span class="badge">Calculus</span>
+          <span class="badge">Linear Algebra</span>
+          <span class="badge">Statistics</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ฝั่งขวา -->
+    <div class="main-content">
+      <div class="main-section">
+        <div class="section-heading">PROFESSIONAL SUMMARY</div>
+        <div class="summary-text">
+          A motivated Mathematics and Computer Science student (MC) at KMUTNB with a keen interest in network architecture, data communications, and web technologies. Passionate about applying analytical reasoning and programming skills to develop reliable software solutions.
+        </div>
+      </div>
+      
+      <div class="main-section">
+        <div class="section-heading">EDUCATION</div>
+        <div class="edu-title">King Mongkut's University of Technology North Bangkok</div>
+        <div class="edu-degree">Bachelor of Science in Mathematics with Computer Science (MC)</div>
+        <div class="edu-details">
+          • Data Communication and Networking (DN 2026)<br>
+          • Data Structures & Algorithms<br>
+          • Discrete Mathematics & Database Systems
+        </div>
+      </div>
+      
+      <div class="main-section">
+        <div class="section-heading">ACADEMIC PROJECTS</div>
+        
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-title">Domain & Web Hosting Setup</span>
+            <span class="project-tag">GitHub Pages • Cloud</span>
+          </div>
+          <div class="project-desc">Configured custom repository and deployed static resume web applications on GitHub Pages for academic evaluation.</div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-title">Email Client Integration Project</span>
+            <span class="project-tag">IMAP • Outlook</span>
+          </div>
+          <div class="project-desc">Configured university mail accounts on desktop mail clients using secure IMAP protocols with automated HTML signatures and filtering rules.</div>
+        </div>
+      </div>
+    </div>
   </div>
+
 </body>
 </html>
